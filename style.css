@@ -8,13 +8,14 @@ html,body {
     	background-size: cover;
 }
 .merrychristmas{
-    justify-content: center;
-    height:40vh;
+    background-position: center center;
+    height:30vh;
     overflow: hidden;
     padding-left: 30vw;
 }
 .image{
-    height: 40vh;
+    height: 30vh;
+    width: 50vw;
     justify-content: center;
 }
 body .body {
@@ -41,7 +42,51 @@ body .body:before {
   top: -191px;
   left: 46px;
   z-index:30;
+  animation: myAnim 2s ease 0s 1 normal forwards;
 }
+@keyframes myAnim {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 0;
+      transform: translateY(-250px);
+    }
+  
+    38% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+    55% {
+      animation-timing-function: ease-in;
+      transform: translateY(-65px);
+    }
+  
+    72% {
+      animation-timing-function: ease-out;
+      transform: translateY(0);
+    }
+  
+    81% {
+      animation-timing-function: ease-in;
+      transform: translateY(-28px);
+    }
+  
+    90% {
+      animation-timing-function: ease-out;
+      transform: translateY(0);
+    }
+  
+    95% {
+      animation-timing-function: ease-in;
+      transform: translateY(-8px);
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      transform: translateY(0);
+    }
+  }
 
 body .body:after {
   width: 160px;
@@ -72,8 +117,50 @@ body .body .head {
   transform: rotate(10deg);
   box-shadow: 0px 43px rgba(0,0,0,0.2) inset;
   z-index:30;
-}
-
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}@keyframes myAnim {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 0;
+      transform: translateY(-250px);
+    }
+  
+    38% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+    55% {
+      animation-timing-function: ease-in;
+      transform: translateY(-65px);
+    }
+  
+    72% {
+      animation-timing-function: ease-out;
+      transform: translateY(0);
+    }
+  
+    81% {
+      animation-timing-function: ease-in;
+      transform: translateY(-28px);
+    }
+  
+    90% {
+      animation-timing-function: ease-out;
+      transform: translateY(0);
+    }
+  
+    95% {
+      animation-timing-function: ease-in;
+      transform: translateY(-8px);
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      transform: translateY(0);
+    }
+  }
 body .body .head:before {
   content: "";
   width: 12px;
@@ -148,7 +235,38 @@ body .body .shadow {
   border-right: 0 solid transparent;
   height: 0;
   width: 36px;
-}
+  animation: braquibouge 10s ease 0s infinite normal forwards;
+}@keyframes braquibouge {
+    0%,
+    100% {
+      transform: rotate(0deg);
+      transform-origin: 50% 100%;
+    }
+  
+    10% {
+      transform: rotate(2deg);
+    }
+  
+    20%,
+    40%,
+    60% {
+      transform: rotate(-4deg);
+    }
+  
+    30%,
+    50%,
+    70% {
+      transform: rotate(4deg);
+    }
+  
+    80% {
+      transform: rotate(-2deg);
+    }
+  
+    90% {
+      transform: rotate(2deg);
+    }
+  }
 .left-hand:before {
   width: 81px;
   left: -82px;
@@ -194,7 +312,38 @@ body .body .shadow {
   border-left: 0 solid transparent;
   height: 0;
   width: 66px;
-}
+  animation: braquibouge 10s ease 0s infinite normal forwards;
+}@keyframes braquibouge {
+    0%,
+    100% {
+      transform: rotate(0deg);
+      transform-origin: 50% 100%;
+    }
+  
+    10% {
+      transform: rotate(2deg);
+    }
+  
+    20%,
+    40%,
+    60% {
+      transform: rotate(-4deg);
+    }
+  
+    30%,
+    50%,
+    70% {
+      transform: rotate(4deg);
+    }
+  
+    80% {
+      transform: rotate(-2deg);
+    }
+  
+    90% {
+      transform: rotate(2deg);
+    }
+  }
 .right-hand:before {
   width: 80px;
   right: -82px;
@@ -229,6 +378,7 @@ body .body .shadow {
 }
 
 body .hat {
+opacity: 0;
 top: -253px;
 left: 76px;
 -webkit-transform: rotate(10deg);
@@ -236,14 +386,27 @@ left: 76px;
 transform: rotate(10deg);
 position: absolute;
 border-radius: 0;
-z-index: 20;
 border-top: 56px solid rgb(37, 37, 37);
 border-left: 10px solid transparent;
 border-right: 10px solid transparent;
 height: 0;
 width: 60px;
 border-bottom: 27px solid rgb(246, 62, 62);
+animation: myAnim 2s ease 2s 1 normal forwards;
+z-index: 20;
 }
+@keyframes myAnim {
+    0% {
+      opacity: 0;
+      transform: translateX(-250px) rotate(-200deg);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0) rotate(10deg);
+      z-index: 20;
+    }
+  }
 
 body .buttons {
   height: 8px;
@@ -286,7 +449,7 @@ body .buttons:after {
   background: url("https://user-images.githubusercontent.com/7342669/50293046-ab4ed880-0440-11e9-8537-8a0e70729b34.png"),
     url("https://user-images.githubusercontent.com/7342669/50293049-ad189c00-0440-11e9-8cae-a57ad65c22ca.png"),
     url("https://user-images.githubusercontent.com/7342669/50294834-c58ab580-0444-11e9-84b6-186b19edf94d.png");
-  animation: letItSnow 20s linear infinite;
+  animation: letItSnow 2s linear infinite;
   z-index: 11;
 }
 @keyframes letItSnow {
