@@ -5,7 +5,16 @@ html,body {
 	height:100vh;
   overflow: hidden;
 }
-
+.merrychristmas{
+    justify-content: center;
+    height:50vh;
+    overflow: hidden;
+    padding-left: 30vw;
+}
+.image{
+    height: 50vh;
+    justify-content: center;
+}
 body .body {
   width: 200px;
   height: 200px;
