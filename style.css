@@ -4,7 +4,8 @@ html,body {
 	background-image:url("https://th.bing.com/th/id/R.f6c184a5726335de987764fa84e8ac03?rik=xxgCp2QPzRtxtg&riu=http%3a%2f%2fngn-mag.com%2fimage%2fwallpaper%2ffond-ecran-noel+(299).jpg&ehk=FQnPGejdlJ5QjRKw7zjikz%2bj96w4t%2frd%2fGy9OEbMU3k%3d&risl=&pid=ImgRaw&r=0");
   	height:100vh;	
   	overflow: hidden;
-	justify-content:center;
+	background-position: center center;
+    	background-size: cover;
 }
 .merrychristmas{
     justify-content: center;
